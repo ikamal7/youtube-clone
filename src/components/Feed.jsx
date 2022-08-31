@@ -8,14 +8,15 @@ import {Sidebar, Videos} from "./";
 const Feed = () => {
 
   const [ selectedCategory, setSelectedCategory ] = useState('New');
-  const [ videos, setVideos ] = useState(null);
+  const [ videos, setVideos ] = useState();
 
-  useEffect(() => {
+  useEffect( () => {
     setVideos(null);
 
     fetchFromAPI(`search?part=snippet&q=${ selectedCategory }`)
-     .then((data) => setVideos(data.items))
-  }, [selectedCategory]);
+      .then((data) => setVideos(data.items));
+    }, [ selectedCategory ]
+  );
 
   return (
     <Stack sx={ {

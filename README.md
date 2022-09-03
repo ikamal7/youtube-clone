@@ -10,7 +10,7 @@ An application used to fetch data form Youtube based on Rapid API, built with Re
 Done live [Live](https://yutube-clone-api.netlify.app/)
 
 ## Project Screen Shot(s)
-![ Screenshot ](https://i.ibb.co/0YN6Wbn/SCR-20220903-5a2.jpg)
+<img src="https://i.postimg.cc/fTn4LYc0/Screenshot-at-Sep-03-10-47-49.png" width="100%" />
 
 
 ## Installation and Setup Instructions
